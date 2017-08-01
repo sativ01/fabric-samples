@@ -48,7 +48,7 @@ function printHelp () {
   echo
   echo "Taking all defaults:"
   echo "	byfn.sh -m generate"
-  echo "	byfn.sh -m up"
+  echo "	byfn.sh -m up"  
   echo "	byfn.sh -m down"
 }
 
@@ -287,7 +287,8 @@ CLI_TIMEOUT=10000
 # channel name defaults to "mychannel"
 CHANNEL_NAME="mychannel"
 # use this as the default docker-compose yaml definition
-COMPOSE_FILE=docker-compose-cli.yaml
+# COMPOSE_FILE=docker-compose-cli.yaml
+COMPOSE_FILE=docker-compose-e2e.yaml
 
 # Parse commandline args
 while getopts "h?m:c:t:" opt; do
